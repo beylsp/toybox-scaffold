@@ -1,0 +1,13 @@
+{
+    "project_name": "toybox",
+    "project_title": "The project's title",
+    "project_description": "The project's short description.",
+    "app_name": "webapp",
+    "use_db": ["yes", "no"],
+    "git_user_name": "Patrik Beyls",
+    "git_user_email": "beylsp@yahoo.com",
+    "git_repo_url": "https://github.com/beylsp/{{ cookiecutter.project_name }}.git",
+    "_copy_without_render": [
+        "templates/*"
+    ]
+}

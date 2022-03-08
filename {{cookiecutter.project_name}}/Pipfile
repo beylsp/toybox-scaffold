@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+python-dotenv = "*"
+click = "*"
+{%- if cookiecutter.use_db %}
+alembic = "*"
+psycopg2 = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+{%- endif %}
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

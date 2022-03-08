@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build": "yarn run build-css",
+    "build-css": "sass static/sass/main.scss static/css/main.css --load-path=node_modules --style=compressed && postcss --use autoprefixer --replace 'static/css/**/*.css' --no-map",
+    "clean": "rm -rf node_modules && rm -f static/css/main.css static/css/main.css.map"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.8",
+    "sass": "^1.49.9",
+    "vanilla-framework": "^3.1.1"
+  }
+}
